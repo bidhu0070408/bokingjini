@@ -13,5 +13,10 @@ namespace Zip_A_Zap.Controllers
         {
             return View();
         }
+
+        public ActionResult Validate()
+        {
+            return RedirectToAction("Index", "Home");
+        }
     }
 }

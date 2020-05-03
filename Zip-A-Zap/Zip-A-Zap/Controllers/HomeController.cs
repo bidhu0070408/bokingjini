@@ -26,5 +26,14 @@ namespace Zip_A_Zap.Controllers
 
             return View();
         }
+
+        public ActionResult Rooms()
+        {
+            return View();
+        }
+        public ActionResult Facilities()
+        {
+            return View();
+        }
     }
 }

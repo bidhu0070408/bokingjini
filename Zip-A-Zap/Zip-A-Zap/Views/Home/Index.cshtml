@@ -13,13 +13,19 @@
         <p>
             Select room of your choice .
         </p>
-        <p><a class="btn btn-default" href="">Select Your Room &raquo;</a></p>
+        @using (Html.BeginForm("Rooms", "Home"))
+        {
+        <p><button type="submit" class="btn btn-default" name="select-room" href="">Select Your Room &raquo;</button></p>
+        }
     </div>
     <div class="col-md-4">
-        <h2>Reception</h2>
-        <p>Searching for number of reception. We are her just make a request as per your need.</p>
-        <p><a class="btn btn-default" href="">Make a request &raquo;</a></p>
-    </div>
+        <h2>Facilities</h2>
+        <p>Get facilities of your choice</p>
+        @using (Html.BeginForm("Facilities", "Home"))
+        {
+            <p><button type="submit" class="btn btn-default" href="">Make a request &raquo;</button></p>
+        }
+        </div>
     <div class="col-md-4">
         <h2>Offers</h2>
         <p>Get all the offers in your resturant</p>
@@ -38,23 +44,12 @@
         <h2>Travel Guide</h2>
         <p>Check for the nearest places to visit.</p>
         <p>
-            <a class="btn btn-default" href="https://maps.googleapis.com/maps/api/place/nearbysearch/json
-  ?location=-33.8670522,151.1957362
-  &radius=1000
-  &types=food
-  &name=harbour
-  &key=AIzaSyDyPyk5PbxrpnXqx74afJbU0ayM0ka4W34" target="_blank">Click to check &raquo;</a>
-        </p>
-        <p>
             <a class="btn btn-default" href="https://www.google.co.in/maps/search/places+to+visit+near+me/" target="_blank">Click to check &raquo;</a>
-        </p>
-        <p>
-            <a class="btn btn-default" href="~/Views/Home/ApiPage.html" target="_blank">Click to check &raquo;</a>
         </p>
     </div>
     <div class="col-md-4">
         <h2>Check-out</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+        <p>Pay your bills and checkout</p>
+        <p><a class="btn btn-default" href="">Check Out &raquo;</a></p>
     </div>
 </div>

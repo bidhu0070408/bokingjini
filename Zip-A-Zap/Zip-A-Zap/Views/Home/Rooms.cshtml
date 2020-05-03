@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms</title>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>Well</h2>
+            <div class="well">Basic Well</div>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-4" alt="try1">
+                <input type="radio" id="img1" name="img1" value="image">
+                <label for="img1"> iamge1</label>
+                <div>
+                    <img class="thumbnail" id="thumb" src="./DFC/hotspots6_PPT13_0048.jpg" width="40" height="40">
+                    <img class="thumbnail" src="./hotspots1/hotspots1_PPT3_0008.jpg" width="40" height="40">
+
+                </div>
+                <h2>Deluxe</h2>
+                <p>Deluxe Rooms consist of a single luxury beds and a pleasant stay</p>
+                <p>Price:1200</p>
+            </div>
+            <div class="col-lg-4">
+                <input type="radio" id="img2" name="img2" value="image">
+                <label for="img2"> image2</label>
+                <img class="thumbnail" id="thumb" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="40" height="40">
+                <img class="thumbnail" src="./hotspots1/hotspots1_PPT3_0008.jpg" width="40" height="40">
+                <h2>Super_Deluxe</h2>
+                <p>All the facilities along with a jacuzzi.</p>
+                <p>Price:1700</p>
+            </div>
+            <div class="col-lg-4">
+                <input type="radio" id="img1" name="img1" value="image">
+                <label for="img1"> iamge1</label>
+                <img class="thumbnail" src="./hotspots1/hotspots1_PPT3_0008.jpg" width="40" height="40">
+                <img class="thumbnail" id="thumb" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="40" height="40">
+                <h2>King's Suite</h2>
+                <p>FIt for a king</p>
+                <p>Price : 2100</p>
+            </div>
+            <input type="submit" value="Submit">
+            <label for="room_persons">person per rooms(max 3):</label>
+            <input type="number" id="room_persons" name="room_persons" min="1" max="3"><br>
+            <label for="check-in">check-in</label>
+            <input type="datetime-local" id="check-in">
+            <label for="check-out">check-out</label>
+            <input type="datetime-local" id="check-out">
+        </div>
+        <button id="nxt">go to next page</button>
+    </div>
+    <script>
+
+// $(function ()
+// {
+//     $("#thumb").on('click', function ()
+//     {
+//         $(this).width(1000);
+//     });
+// });
+    </script>
+</body>
+</html>
