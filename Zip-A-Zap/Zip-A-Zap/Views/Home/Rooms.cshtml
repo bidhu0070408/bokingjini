@@ -20,10 +20,10 @@
 
             <div class="col-lg-4" alt="try1">
                 <input type="radio" id="img1" name="img1" value="image">
-                <label for="img1"> iamge1</label>
+                <label for="img1"> image1</label>
                 <div>
-                    <img class="thumbnail" id="thumb" src="./DFC/hotspots6_PPT13_0048.jpg" width="40" height="40">
-                    <img class="thumbnail" src="./hotspots1/hotspots1_PPT3_0008.jpg" width="40" height="40">
+                    <img class="thumbnail" id="thumb" src="~/Images/Basic-1.jpg" width="300" height="300">
+                    <img class="thumbnail" src="~/Images/Basic-2.jpg" width="300" height="300">
 
                 </div>
                 <h2>Deluxe</h2>
@@ -33,31 +33,37 @@
             <div class="col-lg-4">
                 <input type="radio" id="img2" name="img2" value="image">
                 <label for="img2"> image2</label>
-                <img class="thumbnail" id="thumb" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="40" height="40">
-                <img class="thumbnail" src="./hotspots1/hotspots1_PPT3_0008.jpg" width="40" height="40">
+                <img class="thumbnail" id="thumb" src="~/Images/Deluxe-1.jpg" alt="Generic placeholder image" width="300" height="300">
+                <img class="thumbnail" src="~/Images/Deluxe-2.jpg" width="300" height="300">
                 <h2>Super_Deluxe</h2>
                 <p>All the facilities along with a jacuzzi.</p>
                 <p>Price:1700</p>
             </div>
             <div class="col-lg-4">
                 <input type="radio" id="img1" name="img1" value="image">
-                <label for="img1"> iamge1</label>
-                <img class="thumbnail" src="./hotspots1/hotspots1_PPT3_0008.jpg" width="40" height="40">
-                <img class="thumbnail" id="thumb" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="40" height="40">
+                <label for="img1">Image</label>
+                <img class="thumbnail" src="~/Images/King-1.jpg" width="300" height="300">
+                <img class="thumbnail" id="thumb" src="~/Images/King-1.jpg" alt="Generic placeholder image" width="300" height="300">
                 <h2>King's Suite</h2>
                 <p>FIt for a king</p>
                 <p>Price : 2100</p>
             </div>
+            <br /><br />
             <input type="submit" value="Submit">
             <label for="room_persons">person per rooms(max 3):</label>
             <input type="number" id="room_persons" name="room_persons" min="1" max="3"><br>
             <label for="check-in">check-in</label>
             <input type="datetime-local" id="check-in">
+            <br /><br />
             <label for="check-out">check-out</label>
             <input type="datetime-local" id="check-out">
         </div>
-        <button id="nxt">go to next page</button>
-    </div>
+        <br />
+        @using (Html.BeginForm("Checkout", "Home"))
+        {
+            <button id="nxt">Book</button>
+        }
+        </div>
     <script>
 
 // $(function ()
