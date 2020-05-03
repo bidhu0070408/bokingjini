@@ -50,6 +50,9 @@
     <div class="col-md-4">
         <h2>Check-out</h2>
         <p>Pay your bills and checkout</p>
-        <p><a class="btn btn-default" href="">Check Out &raquo;</a></p>
-    </div>
+        @using (Html.BeginForm("Checkout", "Home"))
+        {
+            <p><button type="submit" class="btn btn-default" href="">Check Out &raquo;</button></p>
+        }
+        </div>
 </div>

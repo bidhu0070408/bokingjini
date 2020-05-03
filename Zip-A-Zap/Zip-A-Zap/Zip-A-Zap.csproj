@@ -197,6 +197,7 @@
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Home\Rooms.cshtml" />
     <Content Include="Views\Home\Facilities.cshtml" />
+    <Content Include="Views\Home\Checkout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
