@@ -15,7 +15,7 @@
         </p>
         @using (Html.BeginForm("Rooms", "Home"))
         {
-        <p><button type="submit" class="btn btn-default" name="select-room" href="">Select Your Room &raquo;</button></p>
+            <p><button type="submit" class="btn btn-default" name="select-room" href="">Select Your Room &raquo;</button></p>
         }
     </div>
     <div class="col-md-4">
@@ -25,7 +25,7 @@
         {
             <p><button type="submit" class="btn btn-default" href="">Make a request &raquo;</button></p>
         }
-        </div>
+    </div>
     <div class="col-md-4">
         <h2>Offers</h2>
         <p>Get all the offers in your resturant</p>
@@ -43,9 +43,12 @@
     <div class="col-md-4">
         <h2>Travel Guide</h2>
         <p>Check for the nearest places to visit.</p>
-        <p>
-            <a class="btn btn-default" href="https://www.google.co.in/maps/search/places+to+visit+near+me/" target="_blank">Click to check &raquo;</a>
-        </p>
+        @using (Html.BeginForm("Places", "Home"))
+        {
+            <p>
+                <button type="submit" class="btn btn-default" href="https://www.google.co.in/maps/search/places+to+visit+near+me/" target="_blank">Click to check &raquo;</button>
+            </p>
+        }
     </div>
     <div class="col-md-4">
         <h2>Check-out</h2>
@@ -54,5 +57,5 @@
         {
             <p><button type="submit" class="btn btn-default" href="">Check Out &raquo;</button></p>
         }
-        </div>
+    </div>
 </div>
